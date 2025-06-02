@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Long AI | 天朗人工智能 - Medical AI Solutions</title>
+    <meta name="description" content="Hong Kong-based medical AI company specializing in reliable machine learning, computer vision, and uncertainty-aware AI solutions.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Sky Long AI</span>
+                <span class="logo-chinese">天朗人工智能</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link" data-en="Home" data-zh="首頁">Home</a>
+                <a href="#about" class="nav-link" data-en="About" data-zh="關於我們">About</a>
+                <a href="#services" class="nav-link" data-en="Services" data-zh="服務">Services</a>
+                <a href="#contact" class="nav-link" data-en="Contact" data-zh="聯絡我們">Contact</a>
+                <button class="lang-toggle" onclick="toggleLanguage()">
+                    <span id="lang-button">中文</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-main" data-en="Reliable AI Solutions" data-zh="可靠的人工智能解決方案">Reliable AI Solutions</span>
+                    <span class="title-sub" data-en="for Medical Innovation" data-zh="為醫療創新而生">for Medical Innovation</span>
+                </h1>
+                <p class="hero-description" data-en="Advancing healthcare through cutting-edge computer vision, uncertainty-aware AI, and reliable machine learning solutions." data-zh="通過尖端的計算機視覺、不確定性感知人工智能和可靠的機器學習解決方案推進醫療保健。">
+                    Advancing healthcare through cutting-edge computer vision, uncertainty-aware AI, and reliable machine learning solutions.
+                </p>
+                <div class="hero-cta">
+                    <button class="cta-primary" data-en="Get Started" data-zh="開始合作">Get Started</button>
+                    <button class="cta-secondary" data-en="Learn More" data-zh="了解更多">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="About Sky Long AI" data-zh="關於天朗人工智能">About Sky Long AI</h2>
+                <p class="section-subtitle" data-en="Pioneering Medical AI from Hong Kong" data-zh="天朗人工智能有限公司 | 來自香港的先鋒醫療AI">Pioneering Medical AI from Hong Kong</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-description" data-en="We are a Hong Kong-based AI company focused on developing reliable machine learning products that transform healthcare. Our expertise spans DCAI, XAI, and uncertainty-aware AI solutions, with a specialized focus on medical computer vision for detection applications." data-zh="我們是一家總部位於香港的人工智能公司，專注於開發可靠的機器學習產品來改變醫療保健。我們的專業知識涵蓋DCAI、XAI和不確定性感知AI解決方案，專門專注於用於檢測應用的醫療計算機視覺。">
+                        We are a Hong Kong-based AI company focused on developing reliable machine learning products that transform healthcare. Our expertise spans DCAI, XAI, and uncertainty-aware AI solutions, with a specialized focus on medical computer vision for detection applications.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">🏥</div>
+                            <h3 data-en="Medical AI Expertise" data-zh="醫療AI專業知識">Medical AI Expertise</h3>
+                            <p data-en="Specialized in computer vision for medical detection and diagnosis" data-zh="專精於醫療檢測和診斷的計算機視覺">Specialized in computer vision for medical detection and diagnosis</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🎯</div>
+                            <h3 data-en="Uncertainty-Aware AI" data-zh="不確定性感知AI">Uncertainty-Aware AI</h3>
+                            <p data-en="Building reliable systems that understand their limitations" data-zh="構建了解自身局限性的可靠系統">Building reliable systems that understand their limitations</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🎓</div>
+                            <h3 data-en="Top-Tier Team" data-zh="頂級團隊">Top-Tier Team</h3>
+                            <p data-en="Graduates from UC Berkeley, HKU, and Johns Hopkins University" data-zh="來自加州大學伯克利分校、港大和約翰斯·霍普金斯大學的畢業生">Graduates from UC Berkeley, HKU, and Johns Hopkins University</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Our Services" data-zh="我們的服務">Our Services</h2>
+                <p class="section-subtitle" data-en="Comprehensive AI solutions tailored for healthcare innovation" data-zh="為醫療創新量身定制的綜合AI解決方案">Comprehensive AI solutions tailored for healthcare innovation</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">👁️</div>
+                    <h3 data-en="Medical Computer Vision" data-zh="醫療計算機視覺">Medical Computer Vision</h3>
+                    <p data-en="Advanced image analysis and detection systems for medical diagnostics using state-of-the-art deep learning techniques." data-zh="使用最先進的深度學習技術進行醫療診斷的高級圖像分析和檢測系統。">Advanced image analysis and detection systems for medical diagnostics using state-of-the-art deep learning techniques.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🧠</div>
+                    <h3 data-en="AI Consulting" data-zh="AI諮詢">AI Consulting</h3>
+                    <p data-en="Strategic AI implementation guidance and data science consulting to help organizations leverage artificial intelligence effectively." data-zh="戰略性AI實施指導和數據科學諮詢，幫助組織有效利用人工智能。">Strategic AI implementation guidance and data science consulting to help organizations leverage artificial intelligence effectively.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3 data-en="Custom AI Solutions" data-zh="定制AI解決方案">Custom AI Solutions</h3>
+                    <p data-en="Tailored machine learning products with focus on reliability, interpretability, and uncertainty quantification." data-zh="量身定制的機器學習產品，專注於可靠性、可解釋性和不確定性量化。">Tailored machine learning products with focus on reliability, interpretability, and uncertainty quantification.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Get In Touch" data-zh="聯絡我們">Get In Touch</h2>
+                <p class="section-subtitle" data-en="Ready to transform your healthcare challenges with AI?" data-zh="準備好用AI改變您的醫療保健挑戰嗎？">Ready to transform your healthcare challenges with AI?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4 data-en="Email" data-zh="電子郵件">Email</h4>
+                            <a href="mailto:skylongai@gmail.com">skylongai@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4 data-en="Location" data-zh="位置">Location</h4>
+                            <p data-en="Hong Kong" data-zh="香港">Hong Kong</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/skylongai" class="social-link" target="_blank">
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/company/107446595" class="social-link" target="_blank">
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://instagram.com/skylongai" class="social-link" target="_blank">
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Sky Long AI | 天朗人工智能有限公司</p>
+                    <p data-en="Reliable AI Solutions for Medical Innovation" data-zh="為醫療創新提供可靠的AI解決方案">Reliable AI Solutions for Medical Innovation</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
