@@ -16,6 +16,31 @@ function toggleLanguage() {
     }, 150);
 }
 
+// Mobile Menu Toggle
+function toggleMobileMenu() {
+    const navMenu = document.getElementById('nav-menu');
+    const hamburger = document.getElementById('hamburger');
+    
+    navMenu.classList.toggle('active');
+    hamburger.classList.toggle('active');
+}
+
+// Close mobile menu when clicking on a link
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.nav-link');
+    const navMenu = document.getElementById('nav-menu');
+    const hamburger = document.getElementById('hamburger');
+    
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            if (navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        });
+    });
+});
+
 function updateLanguage() {
     const elements = document.querySelectorAll('[data-en][data-zh]');
     const langButton = document.getElementById('lang-button');
